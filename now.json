@@ -1,0 +1,15 @@
+{
+  "name": "block-demos",
+  "version": 2,
+  "builds": [
+    { "src": "blocks/calculate-square-root/*.js", "use": "@now/node" },
+    { "src": "blocks/inspect-hostname-dns/*.js", "use": "@now/node" }
+  ],
+  "routes": [
+    {
+      "src": "/blocks/(.*)",
+      "dest": "/blocks/$1"
+    }
+  ],
+  "regions": ["gru1", "hnd1", "iad1", "sfo1"]
+}
