@@ -17,7 +17,7 @@ to do is provide. a hostname then the block does its work to find us answer.
 
 ```sh
 curl -v -X OPTIONS \
-  https://block-demos.webpipes.now.sh/inspect-hostname-dns
+  https://webpip.es/inspect-hostname-dns
 ```
 
 <details>
@@ -50,7 +50,7 @@ curl -v -X OPTIONS \
 curl -i -X POST \
   -H "Content-Type: application/json" \
   -d '{"inputs":[{"domain":"google.com"}]}' \
-https://block-demos.webpipes.now.sh/inspect-hostname-dns
+  https://webpip.es/inspect-hostname-dns
 ```
 
 <details>
@@ -66,7 +66,7 @@ https://block-demos.webpipes.now.sh/inspect-hostname-dns
 }
 ```
 
-Oh well, looks lke that partcular domain is already taken!
+Oh well, looks lke that particular domain is already taken!
 
 ## Next Steps
 
