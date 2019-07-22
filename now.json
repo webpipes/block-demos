@@ -7,7 +7,7 @@
   ],
   "routes": [
     {
-      "src": "/blocks/(.*)",
+      "src": "/(.*)",
       "dest": "/blocks/$1"
     }
   ],
