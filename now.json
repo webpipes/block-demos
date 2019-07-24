@@ -8,7 +8,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/blocks/$1"
+      "dest": "blocks/$1"
     }
   ],
   "regions": ["gru1", "hnd1", "iad1", "sfo1"]
