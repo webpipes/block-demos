@@ -1,0 +1,6 @@
+{
+  "name": "pkg-news-api",
+  "dependencies": {
+    "newsapi": "^2.4.0"
+  }
+}
