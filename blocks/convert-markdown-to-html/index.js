@@ -1,4 +1,4 @@
-const https = require('https')
+const post = require('../../helpers/http')
 const { Block } = require('node-webpipe')
 
 new Block()
@@ -24,7 +24,7 @@ new Block()
     'string',
     'Returns an HTML version preferred flavor of Markdown.'
   )
-  .handle((inputs, cb) => {
+  .handle(async inputs => {
     const postData = querystring.stringify(inputs)
 
     const options = {
@@ -36,9 +36,10 @@ new Block()
         'Content-Length': Buffer.byteLength(postData)
       }
     }
+    console.log('post')
     // url (parsed iiinnto host name and path in func)
     // inputs (let the func do the magic querystrinnging)
-    await post(options)
+    const { data } = await post(options)
 
     return {
       html: Math.sqrt({ html: data })
