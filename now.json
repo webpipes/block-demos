@@ -3,6 +3,10 @@
   "version": 2,
   "builds": [
     { "src": "blocks/calculate-square-root/*.js", "use": "@now/node" },
+    { "src": "blocks/parse-rss/*.js", "use": "@now/node" },
+    { "src": "blocks/convert-markdown-to-html/*.js", "use": "@now/node" },
+    { "src": "blocks/pkg-news-api/*.js", "use": "@now/node" },
+    { "src": "blocks/upload-url-to-s3/*.js", "use": "@now/node" },
     { "src": "blocks/inspect-hostname-dns/*.js", "use": "@now/node" }
   ],
   "routes": [
@@ -11,5 +15,11 @@
       "dest": "blocks/$1"
     }
   ],
-  "regions": ["gru1", "hnd1", "iad1", "sfo1"]
+  "regions": ["gru1", "hnd1", "iad1", "sfo1"],
+  "env": {
+    "AWS_S3_ACCESS_KEY": "@aws_s3_access_key",
+    "AWS_S3_SECRET_KEY": "@aws_s3_secret_key",
+    "AWS_S3_BUCKET": "@aws_s3_bucket",
+    "API_KEY_NEWSAPI": "api_key_newsapi"
+  }
 }
