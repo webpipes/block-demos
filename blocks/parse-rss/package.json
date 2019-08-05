@@ -2,6 +2,7 @@
   "name": "parse-rss",
   "version": "0.0.1",
   "dependencies": {
-    "feedparser-promised": "^2.0.1"
+    "feedparser-promised": "^2.0.1",
+    "node-webpipe": "0.0.3"
   }
 }
