@@ -3,9 +3,11 @@
   "version": 2,
   "builds": [
     { "src": "blocks/calculate-square-root/*.js", "use": "@now/node" },
+    { "src": "blocks/parse-url/*.js", "use": "@now/node" },
     { "src": "blocks/parse-rss/*.js", "use": "@now/node" },
     { "src": "blocks/convert-markdown-to-html/*.js", "use": "@now/node" },
     { "src": "blocks/pkg-news-api/*.js", "use": "@now/node" },
+    { "src": "blocks/scrape-url-html/*.js", "use": "@now/node" },
     { "src": "blocks/upload-url-to-s3/*.js", "use": "@now/node" },
     { "src": "blocks/inspect-hostname-dns/*.js", "use": "@now/node" }
   ],
@@ -20,6 +22,8 @@
     "AWS_S3_ACCESS_KEY": "@aws_s3_access_key",
     "AWS_S3_SECRET_KEY": "@aws_s3_secret_key",
     "AWS_S3_BUCKET": "@aws_s3_bucket",
-    "API_KEY_NEWSAPI": "api_key_newsapi"
+    "API_KEY_NEWSAPI": "@api_key_newsapi",
+    "SCRAPER_API_ORIGIN": "@scraper_api_origin",
+    "SCRAPER_API_KEY": "@scraper_api_key"
   }
 }
