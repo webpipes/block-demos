@@ -4,18 +4,18 @@
   "builds": [
     { "src": "www/package.json", "use": "@now/next" },
     { "src": "api/calculate-square-root/*.js", "use": "@now/node" },
-    { "src": "blocks/parse-url/*.js", "use": "@now/node" },
-    { "src": "blocks/parse-rss/*.js", "use": "@now/node" },
-    { "src": "blocks/convert-markdown-to-html/*.js", "use": "@now/node" },
-    { "src": "blocks/pkg-news-api/*.js", "use": "@now/node" },
-    { "src": "blocks/scrape-url-html/*.js", "use": "@now/node" },
-    { "src": "blocks/upload-url-to-s3/*.js", "use": "@now/node" },
-    { "src": "blocks/inspect-hostname-dns/*.js", "use": "@now/node" }
+    { "src": "api/parse-url/*.js", "use": "@now/node" },
+    { "src": "api/parse-rss/*.js", "use": "@now/node" },
+    { "src": "api/convert-markdown-to-html/*.js", "use": "@now/node" },
+    { "src": "api/pkg-news-api/*.js", "use": "@now/node" },
+    { "src": "api/scrape-url-html/*.js", "use": "@now/node" },
+    { "src": "api/upload-url-to-s3/*.js", "use": "@now/node" },
+    { "src": "api/inspect-hostname-dns/*.js", "use": "@now/node" }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "blocks/$1"
+      "dest": "api/$1"
     },
     {
       "src": "/(.*)",
