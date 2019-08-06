@@ -1,7 +1,7 @@
 const stream = require('stream')
 const axios = require('axios')
 const AWS = require('aws-sdk')
-const url = require('url') // built-in utility
+const url = require('url')
 
 class S3RemoteUploader {
   constructor (remoteAddr) {

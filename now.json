@@ -1,8 +1,9 @@
 {
-  "name": "block-demos",
+  "name": "webpipe-examples",
   "version": 2,
   "builds": [
-    { "src": "blocks/calculate-square-root/*.js", "use": "@now/node" },
+    { "src": "www/package.json", "use": "@now/next" },
+    { "src": "api/calculate-square-root/*.js", "use": "@now/node" },
     { "src": "blocks/parse-url/*.js", "use": "@now/node" },
     { "src": "blocks/parse-rss/*.js", "use": "@now/node" },
     { "src": "blocks/convert-markdown-to-html/*.js", "use": "@now/node" },
@@ -15,6 +16,11 @@
     {
       "src": "/(.*)",
       "dest": "blocks/$1"
+    },
+    {
+      "src": "/(.*)",
+      "methods": ["GET"],
+      "dest": "www/$1"
     }
   ],
   "regions": ["gru1", "hnd1", "iad1", "sfo1"],
