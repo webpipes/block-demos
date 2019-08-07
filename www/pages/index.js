@@ -14,43 +14,120 @@ const Page = () => (
     </div>
 
     <div className='intro'>
-      <h1>
-        Uh oh! If you're here you're probably a little lost, need a little help?
-      </h1>
-      <h3>Warning Notice</h3>
-      <p>
-        Webpip.es do not accept HTTP <code>GET</code> requests.
-      </p>
-      <p>
-        Please remember to use the appropriate HTTP Method, either{' '}
-        <code>OPTIONS</code>
-        or <code>POST</code>.
-      </p>
-
-      <hr />
-      <h3>Helpful Resources</h3>
-      <p>
-        You might find this{' '}
-        <a href='https://codepen.io/matthewhudson/full/GVEmBo' target='_blank'>
-          Codepen
-        </a>{' '}
-        helpful, it's an example of the JavaScript client invoking a simple
-        WebPipe that converts GitHub-flavored Markdown.
-      </p>
-      <p>
-        You can also visit the{' '}
+      <b>
         <a
-          href='https://webpipes.org'
-          title='WebPipes Official Site'
+          href='https://github.com/webpipes/webpipe-examples'
+          title='GitHub for this project'
           target='_blank'>
-          WebPipes.org
-        </a>{' '}
-        Official Site for a Slack invite, and access to other community
-        resources &amp; gathering spots.
-      </p>
-
+          {'View on GitHub'}
+        </a>
+      </b>
+      <h1>WebPip.es </h1>
+      <i>A Public Service offered by WebPipes.org</i>
       <hr />
-
+      <h3>Interactive Demos</h3>
+      <ul>
+        <li>
+          <a
+            href='https://repl.it/@matthewhudson/webpipeexamples'
+            target='_blank'>
+            repl.it
+          </a>{' '}
+          - JS Client + <a href='https://webpip.es/parse-url'>parse-url</a>
+        </li>
+        <li>
+          <a
+            href='https://codepen.io/matthewhudson/full/GVEmBo'
+            target='_blank'>
+            Codepen
+          </a>{' '}
+          - JS client +{' '}
+          <a href='https://webpip.es/convert-markdown-to-html'>
+            convert-markdown-to-html
+          </a>
+        </li>
+      </ul>
+      <hr />
+      <h3>Live WebPipes</h3>
+      <ul>
+        <li>
+          <a href='https://webpip.es/scrape-url-html'>scrape-url-html</a>
+        </li>
+        <li>
+          <a href='https://webpip.es/parse-url'>parse-url</a>
+        </li>
+        <li>
+          <a href='https://webpip.es/upload-url-to-s3'>upload-url-to-s3</a>
+        </li>
+        <li>
+          <a href='https://webpip.es/convert-markdown-to-html'>
+            convert-markdown-to-html
+          </a>
+        </li>
+        <li>
+          <a href='https://webpip.es/parse-rss'>parse-rss</a>
+        </li>
+        <li>
+          <a href='https://webpip.es/pkg-news-api'>pkg-news-api</a>
+        </li>
+        <li>
+          <a href='https://webpip.es/inspect-hostname-dns'>
+            inspect-hostname-dns
+          </a>
+        </li>
+        <li>
+          <a href='calculate-square-root'>calculate-square-root</a>
+        </li>
+      </ul>
+      <hr />
+      <h3>Client & Server Libraries</h3>
+      <ul className='ml0 pl0 f5 dib'>
+        <li>
+          <a
+            className='dib'
+            href='https://www.github.com/webpipes/node-webpipe'>
+            Node/JavaScript Server
+          </a>
+        </li>
+        <li>
+          <a className='dib' href='https://github.com/webpipes/webpipe.js/'>
+            JavaScript Client
+          </a>
+        </li>
+        <li>
+          <a className='dib' href='https://github.com/fkautz/golang-webpipes'>
+            Go Server
+          </a>
+        </li>
+        <li>
+          <a
+            className='dib'
+            href='https://github.com/matthewhudson/webpipe.php'>
+            PHP Client
+          </a>
+        </li>
+      </ul>
+      <hr />
+      <h3>Community</h3>
+      <ul className='ml0 pl0'>
+        <li className='dib'>
+          <a href='https://join.slack.com/t/webpipes/shared_invite/enQtNjgwMzUzMDk1NzAxLTUwNDE5ZTJmMTgyMWI4MjgxOGNjOWEzNzU3Yzc5MjM0M2E1MzJlYTI0OTY1Njc3YWJhODMxYzZkZjY2MzMyNDY'>
+            Slack
+          </a>
+        </li>
+        <li className='dib'>
+          <a href='https://www.github.com/webpipes'>GitHub</a>
+        </li>
+        <li className='dib'>
+          <a href='https://groups.google.com/forum/#!forum/webpipes'>
+            Google Group
+          </a>
+        </li>
+        <li className='dib'>
+          <a href='https://spectrum.chat/webpipes?tab=posts'>Spectrum</a>
+        </li>
+      </ul>
+      <hr />
       <p>
         View this project on{' '}
         <a
@@ -138,69 +215,9 @@ const Page = () => (
         font-size: 30px;
       }
       hr {
-        display: none;
         border: none;
         border-bottom: 1px solid #666;
-        width: 100px;
-        margin: 30px 0;
-      }
-      .clocks {
-        display: flex;
-        flex-wrap: wrap;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0 -10px;
-        padding: 40px 0;
-        max-height: 500px;
-      }
-      .clocks a {
-        position: relative;
-        flex: 1 0 25%;
-        text-align: center;
-        padding: 10px;
-        margin: 20px 0;
-        font-size: 17px;
-        transition: all 0.1s ease;
-      }
-      .clocks a:hover {
-        box-shadow: 0 0 0 1px #666;
-      }
-      .clock span {
-        font-weight: 700;
-      }
-      .clock time {
-        display: block;
-        height: 3.2em;
-        font-weight: 700;
-        color: #fff;
-        animation: pulse 1s forwards;
-      }
-      @keyframes pulse {
-        from {
-          color: #fff;
-        }
-        to {
-          color: #bbb;
-        }
-      }
-      @media screen and (max-width: 960px) {
-        .clocks a {
-          flex: 1 0 50%;
-          font-size: 20px;
-        }
-      }
-      @media screen and (max-width: 480px) {
-        .clocks a {
-          flex: 1 0 100%;
-        }
-        .clocks {
-          max-height: unset;
-        }
-        hr {
-          display: block;
-        }
+        margin: 1.5em 0;
       }
     `}</style>
   </div>
