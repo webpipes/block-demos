@@ -22,7 +22,7 @@ new Block()
     'Top headlines and ledes from requested source(s).'
   )
   .handle(({ sources = ['the-new-york-times'] }, cb) => {
-    const articles = client.v2
+    client.v2
       .topHeadlines({
         sources: sources,
         language: 'en'

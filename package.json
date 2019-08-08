@@ -8,6 +8,7 @@
   "author": "Matthew Hudson",
   "license": "MIT",
   "dependencies": {
+    "newsapi": "^2.4.0",
     "node-webpipe": "0.0.3"
   }
 }

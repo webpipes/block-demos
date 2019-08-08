@@ -3,7 +3,7 @@ const { Block } = require('node-webpipe')
 
 new Block()
   .name('Convert Markdown to HTML')
-  .description('Determine whether or not a hostname exists.')
+  .description('Convert Markdown to HTML via the GitHub API')
   .input(
     'text',
     'string',
