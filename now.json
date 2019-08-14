@@ -21,7 +21,7 @@
     {
       "src": "/(.*)",
       "methods": ["GET"],
-      "dest": "www/$1"
+      "dest": "www/?slug=$1"
     }
   ],
   "regions": ["gru1", "hnd1", "iad1", "sfo1"],

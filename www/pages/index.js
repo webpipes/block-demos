@@ -49,6 +49,12 @@ const Page = () => (
       </ul>
       <hr />
       <h3>Live WebPipes</h3>
+      <div class='note'>
+        <p>
+          <strong>Remember:</strong> Only `OPTIONS` or `POST` are legal methods.
+          WebPipes do not support `GET` requests.
+        </p>
+      </div>
       <ul>
         <li>
           <a href='https://webpip.es/scrape-url-html'>scrape-url-html</a>
@@ -76,54 +82,51 @@ const Page = () => (
           </a>
         </li>
         <li>
-          <a href='calculate-square-root'>calculate-square-root</a>
+          <a href='https://webpip.es/calculate-square-root'>
+            calculate-square-root
+          </a>
         </li>
       </ul>
       <hr />
       <h3>Client & Server Libraries</h3>
-      <ul className='ml0 pl0 f5 dib'>
+      <ul>
         <li>
-          <a
-            className='dib'
-            href='https://www.github.com/webpipes/node-webpipe'>
+          <a href='https://www.github.com/webpipes/node-webpipe'>
             Node/JavaScript Server
           </a>
         </li>
         <li>
-          <a className='dib' href='https://github.com/webpipes/webpipe.js/'>
+          <a href='https://github.com/webpipes/webpipe.js/'>
             JavaScript Client
           </a>
         </li>
         <li>
-          <a className='dib' href='https://github.com/fkautz/golang-webpipes'>
-            Go Server
-          </a>
+          <a href='https://github.com/ajvb/webpype'>Python Client</a>
         </li>
         <li>
-          <a
-            className='dib'
-            href='https://github.com/matthewhudson/webpipe.php'>
-            PHP Client
-          </a>
+          <a href='https://github.com/fkautz/golang-webpipes'>Go Server</a>
+        </li>
+        <li>
+          <a href='https://github.com/matthewhudson/webpipe.php'>PHP Client</a>
         </li>
       </ul>
       <hr />
       <h3>Community</h3>
-      <ul className='ml0 pl0'>
-        <li className='dib'>
+      <ul>
+        <li>
           <a href='https://join.slack.com/t/webpipes/shared_invite/enQtNjgwMzUzMDk1NzAxLTUwNDE5ZTJmMTgyMWI4MjgxOGNjOWEzNzU3Yzc5MjM0M2E1MzJlYTI0OTY1Njc3YWJhODMxYzZkZjY2MzMyNDY'>
             Slack
           </a>
         </li>
-        <li className='dib'>
+        <li>
           <a href='https://www.github.com/webpipes'>GitHub</a>
         </li>
-        <li className='dib'>
+        <li>
           <a href='https://groups.google.com/forum/#!forum/webpipes'>
             Google Group
           </a>
         </li>
-        <li className='dib'>
+        <li>
           <a href='https://spectrum.chat/webpipes?tab=posts'>Spectrum</a>
         </li>
       </ul>
@@ -149,26 +152,32 @@ const Page = () => (
       }
       body {
         margin: 0;
-        color: white;
+        color: black;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
           'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
           'Helvetica Neue', sans-serif;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background: radial-gradient(circle, #333, #333 1px, #000 1px, #000);
-        background-size: 28px 28px;
-        background-position: center;
         font-size: 18px;
         line-height: 1.6;
         font-weight: 400;
       }
       a {
         text-decoration: none;
-        color: white;
+        color: #0076ff;
+      }
+      .note {
+        background: #fff3d4;
+        border-color: #f6b73c;
+        padding: 5px 15px;
+        border-radius: 0.25em;
+      }
+      ul li {
+        list-style-type: circle;
       }
       strong {
-        color: white;
+        color: black;
         font-weight: 600;
       }
       code {
@@ -183,11 +192,11 @@ const Page = () => (
       }
       ::selection {
         background: #f81ce5;
-        color: white;
+        color: black;
       }
       ::-moz-selection {
         background: #f81ce5;
-        color: white;
+        color: black;
       }
       .container {
         display: flex;

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A fine collection of hand-crafted example webpipes.",
   "scripts": {
+    "dev": "now dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matthew Hudson",
