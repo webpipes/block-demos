@@ -3,7 +3,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "next": "^8.0.0-canary.2",
+    "next": "^11.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
